@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARCHI FOR ALL | Coming Soon</title>
+  <meta name="description" content="ARCHI FOR ALL - Coming Soon. @lista.archimedeforall" />
+  <meta property="og:title" content="ARCHI FOR ALL - Coming Soon" />
+  <meta property="og:description" content="@lista.archimedeforall" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://instagram.com/lista.archimedeforall" />
+  <meta name="theme-color" content="#0c0e12" />
+
+  <!-- Font Outfit per Coming Soon & GTAArtDeco per bottoni -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Canvas Griglia Tecnica Interattiva -->
+  <canvas id="tech-canvas"></canvas>
+
+  <!-- Griglia di fondo architettonica pulita -->
+  <div class="technical-grid-bg"></div>
+
+  <!-- Layout Strutturato e Minimal a Schermo Intero -->
+  <div class="industrial-container">
+
+    <!-- Top Bar: TITOLO IN ALTO "ARCHI FOR ALL" & LINK INSTAGRAM -->
+    <header class="top-header">
+      <div class="brand-top-group">
+        <span class="brand-title-top">ARCHI FOR ALL</span>
+      </div>
+
+      <a href="https://instagram.com/lista.archimedeforall" target="_blank" rel="noopener noreferrer" class="ig-top-tag">
+        <svg class="ig-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+        </svg>
+        <span>@lista.archimedeforall</span>
+      </a>
+    </header>
+
+    <!-- Centro Scena: COMING SOON Solido e Minimale -->
+    <main class="main-center">
+      
+      <!-- TITOLO COMING SOON SOLIDO E DI IMPATTO -->
+      <div class="title-block">
+        <h1 class="coming-soon-solid">
+          <span class="solid-title">COMING SOON</span><span class="dots-solid">...</span>
+        </h1>
+      </div>
+
+      <!-- Action Dock: Bottoni con Font GTAArtDeco -->
+      <div class="action-dock">
+        <a href="https://instagram.com/lista.archimedeforall" target="_blank" rel="noopener noreferrer" class="tech-btn-primary">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+          <span>INSTAGRAM @LISTA.ARCHIMEDEFORALL</span>
+          <span class="arrow">↗</span>
+        </a>
+
+        <button type="button" class="tech-btn-secondary" id="btn-copy-tag" title="Copia tag negli appunti">
+          <svg class="btn-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+          </svg>
+          <span id="copy-btn-label">COPIA @TAG</span>
+        </button>
+      </div>
+
+    </main>
+
+    <!-- Bottom Footer Minimale -->
+    <footer class="bottom-footer">
+      <span class="minimal-tag">@LISTA.ARCHIMEDEFORALL</span>
+    </footer>
+
+  </div>
+
+  <!-- Toast Notifica Copia -->
+  <div class="toast" id="toast">
+    <span class="toast-indicator">✓</span>
+    <span class="toast-message" id="toast-message">TAG @LISTA.ARCHIMEDEFORALL COPIATO</span>
+  </div>
+
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
